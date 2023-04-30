@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Call Counts</title>
+</head>
+<body>
+    <h1>Call Counts</h1>
+    <h3>Search Results for {{ start_date.strftime("%Y-%m-%d") }} to {{ end_date.strftime("%Y-%m-%d") }} for phone number {{ search_term }}</h3>
+    <p>Number of incoming calls: {{ incoming_calls }}</p>
+    <p>Total duration of incoming calls: {{ incoming_duration }} seconds</p>
+    <p>Number of outgoing calls: {{ outgoing_calls }}</p>
+    <p>Total duration of outgoing calls: {{ outgoing_duration }} seconds</p>
+</body>
+</html>
