@@ -1,0 +1,68 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Frequently contacted phone numbers</title>
+</head>
+<body>
+    <h1 style="text-align: center";>Frequently contacted phone numbers</h1>
+    <h3 style="text-align: center";>Incoming calls</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>Phone number</th>
+                <th>Count</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for number in in_numbers %}
+            <tr>
+                <td>{{ number._id }}</td>
+                <td>{{ number.count }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+    <h3 style="text-align: center";>Outgoing calls</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>Phone number</th>
+                <th>Count</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for number in out_numbers %}
+            <tr>
+                <td>{{ number._id }}</td>
+                <td>{{ number.count }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+    <style>
+        table {
+            text-align: center;
+            border-collapse: collapse;
+            margin-left: 43%;
+            row-gap: 30px;
+        }
+        
+        td {
+            border: 1px solid;
+            text-align: justify;
+            padding-left: 1em;
+            padding-right: 1em;
+        }
+        
+        th {
+            border: 1px solid;
+            width: 4px;
+            height: 45px;
+        }
+    </style>
+</body>
+</html>
