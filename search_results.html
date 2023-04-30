@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Search Results</title>
+</head>
+<body>
+    <div class="container">
+	<h2 style="text-align: center; margin-right: auto;">Search Results  {{ search_term }}</h2>
+	<table>
+		<thead>
+			<tr>
+				<th>Call Type</th>
+				<th>Count</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>Incoming Calls</td>
+				<td>{{ incoming_calls }}</td>
+			</tr>
+				<td>Outgoing Calls</td>
+				<td>{{ outgoing_calls }}</td>
+			</tr>
+			<tr>
+				<td>Total Calls</td>
+				<td>{{ total_calls }}</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+    <style>
+         table {
+            text-align: center;
+            border-collapse: collapse;
+            margin-left: 38%;
+            row-gap: 30px;
+            width:25%;
+        }
+        
+        td {
+            border: 1px solid;
+            text-align: justify;
+            padding-left: 1em;
+            padding-right: 1em;
+        }
+        
+        th {
+            border: 1px solid;
+            width: 4px;
+            height: 45px;
+        }
+
+        .container{
+            margin-top: 5%;
+        }
+    </style>
+</body>
+</html> 
+
