@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Search Form</title>
+  </head>
+  <body>
+    <form action="{{ url_for('search') }}" method="POST">
+      <div class="container">
+      <label for="search_term">Search Number:</label>
+      <input type="text" name="search_term" id="search_term">
+      <br>
+      <button type="submit" name="submit_button" value="search">Search</button>
+      <button type="submit" name="submit_button" value="reset">Reset</button>
+    </div>
+    </form>
+
+
+    <div class="card">
+      <a href="/calls">Date-Wise Calls</a><br><br>
+      <a href="/frequent_numbers">Frequently Contacted</a><br><br>
+      <a href="duration">Calls Duration</a>
+
+  </div>
+
+
+  <style>
+    .card{
+      text-align: center;
+      margin-top: 12%;
+    }
+
+    .container{
+      margin-left: 40%;
+      margin-top: 10%;
+      
+    }
+  </style>
+  </body>
+</html>
